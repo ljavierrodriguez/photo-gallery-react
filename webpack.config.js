@@ -54,9 +54,6 @@ module.exports = {
         new CleanWebpackPlugin(),
         new Dotenv({
             path: path.resolve(process.cwd(), '.env'),
-        }),
-        new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify(env.NODE_ENV),
         })
     ]
 }
