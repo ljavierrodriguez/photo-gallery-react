@@ -52,6 +52,8 @@ module.exports = {
             filename: 'style.css'
         }),
         new CleanWebpackPlugin(),
-        new Dotenv()
+        new Dotenv({
+            path: path.resolve(process.cwd(), '.env'),
+        })
     ]
 }
