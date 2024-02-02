@@ -69,7 +69,6 @@ const App = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <span>{process.env.REACT_APP_API_KEY}</span>
                         <div className="position-relative">
                             <Reproductor videoRef={videoRef} autoplay={autoplay} />
                             <div className="position-absolute top-50 end-0">
